@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Explore SkyIslands</title>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/openPage.js"></script>
+        <script src="js/imageEnhance.js"></script>
+        <script src="js/galleryEnhance.js"></script>
+        <script src="js/backToTop.js"></script>
+        <script src="js/checkform.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="headertab">
+                <div class="logo">
+                    <a href="discount.html" target="_blank">
+                        <img src="images/logo.png" alt="Logo of SkyIslands.">
+                    </a>
+                </div>
+                <div>
+                    <nav>
+                        <ol>
+                            <li>
+                                <a href="index.html">
+                                    <b>Home</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="islands.html">
+                                    <b>Islands</b>
+                                    <small>Explore </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <b>About us</b>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+
+            <div class="subtab">
+                <button class="tablinks" onclick="openPage(event, 'entertainment')">entertainment</button>
+                <button class="tablinks" onclick="openPage(event, 'gallery')">gallery</button>
+            </div>
+
+            <section class="maincontent", id="entertainment">
+
+                <div>
+                    <h1>entertainment</h1>
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <article>
+                        From skydiving to bungee jumping, SkyIsland can provide a whole range of extreme sports activities. 
+                        <br>
+                        <br>
+                        Never trained for extreme sports such as skydiving? 
+                        <br>
+                        <br>
+                        Don't worry! We offer over <span>50</span> professional coaches for various sports! You can book a coach online at the bottom of this page.
+                    </article>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <figure>
+                        <img class="min" src="images/adult-agenda-black-1543924.jpg" alt="Leo is looking at testing plans.">
+                        <br>
+                        <small>Leo, one of our best coaches</small>
+                    </figure>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <section>
+
+                    <div>
+                        <h2>book a coach</h2>
+                        <br>
+                    </div>
+                    
+                    <form action="received.html" method="get">
+                        <fieldset>
+                            <legend>Submit your name and choose your coach and date to finish booking</legend>
+
+                            <div>
+                                <label for="form-name">Your Name:</label>
+                                <div>
+                                <input type="text" name="enter-name" id="form-name" placeholder="Please enter your name">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div>
+                                <label for="form-coach">Choose a coach:</label>
+                                <div>
+                                    <select id="form-coach" name="select-coach">
+                                        <option>Amelia</option>
+                                        <option>Bonnie</option>
+                                        <option>Grace</option>
+                                        <option>Fizz</option>
+                                        <option>Leo</option>
+                                        <option>Mundo</option>
+                                        <option>Noah</option>
+                                        <option>Oliver</option>
+                                        <option>Peanut</option>
+                                        <option>Teemo</option>
+                                        <option>Zoe</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div>
+                                <label for="form-date">Select a date:</label>
+                                <div>
+                                    <select id="form-date" name="select-date">
+                                        <option>2019-12-20</option>
+                                        <option>2019-12-21</option>
+                                        <option>2019-12-22</option>
+                                        <option>2019-12-23</option>
+                                        <option>2019-12-24</option>
+                                        <option>2019-12-25</option>
+                                        <option>2019-12-26</option>
+                                        <option>2019-12-27</option>
+                                        <option>2019-12-28</option>
+                                        <option>2019-12-29</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <br>
+
+                            <div>
+                                <input id="submit" name="form-submit" type="submit" value="Submit" onclick="checkForm()">
+                            </div>
+
+                        </fieldset> 
+                    </form>
+
+                </section>
+            </section>
+
+            <section class="maincontent", id="gallery">
+
+                <div>
+                    <h1>gallery</h1>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="slidescontainer">
+
+                    <div>
+                        <a class="prev_next" onclick="changeSlides(-1)">
+                            Previous picture
+                        </a>
+                        <br>
+                    </div>
+
+                    <br>
+
+                    <div class="slide">
+                        <img class="min" src="images/feel-good.jpg" alt="Tourists have a wonderful experience in SkyIslands">
+
+                        <div>
+                            <small>Wonderful experience in SkyIslands</small>
+                        </div>
+                    </div>
+ 
+                    <div class="slide">
+                        <img class="min" src="images/beach-birds-eye-view-cloudiness-2933665.jpg" alt="A bird's-eye view from SkyIslands">
+                    
+                        <div>
+                            <small>Bird's-eye view from SkyIslands</small>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="min" src="images/adventure-flares-formation-70361.jpg" alt="People are skydiving below SkyIslands.">
+                    
+                        <div>
+                            <small>Skydiving from SkyIslands</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br>
+                        <a class="prev_next" onclick="changeSlides(1)">
+                            Next picture
+                        </a>
+                    </div>
+
+                    <br>
+
+                </div>
+                
+            </section>
+        </div>
+
+        <footer>
+            <ol>
+                <li>
+                    <button id="backtotop" type="button">Back to top</button>
+                </li>
+                    
+                <li>
+                    <div class="logo">
+                        <a href="index.html" target="_blank">
+                            <img src="images/logo.png" alt="Logo of SkyIslands.">
+                        </a>
+                    </div>
+                </li>
+            </ol>
+        </footer>
+    </body>
+</html>
+    
